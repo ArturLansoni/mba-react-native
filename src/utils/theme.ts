@@ -21,7 +21,7 @@ export function themeSchema() {
     colors: {
       primary: '#ed145b',
       primaryDark: '#ba1247',
-      background: '#454545',
+      background: '#ededed',
       text: defaultColors.black,
       buttonBackground: defaultColors.white,
     },
@@ -31,7 +31,7 @@ export function themeSchema() {
     colors: {
       primary: '#e21d5f',
       primaryDark: '#1e1e1e',
-      background: '#bababa',
+      background: '#1A1A2E',
       text: '#ededed',
       buttonBackground: lightMode.colors.primaryDark,
     },

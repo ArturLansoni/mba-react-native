@@ -20,7 +20,7 @@ export function useWelcome() {
   const featuresToggles = useRemoteConfigStore(
     state => state.featuresToggles,
   );
-  const {goToNews, goToMaps} = coordinator;
+  const {goToNews, goToMaps, goToMembers} = coordinator;
   const {checkAndRequestLocation} = usePermissions();
 
   useEffect(() => {
@@ -36,5 +36,6 @@ export function useWelcome() {
     featuresToggles,
     goToNews,
     goToMaps,
+    goToMembers,
   };
 }

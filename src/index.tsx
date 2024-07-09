@@ -6,9 +6,10 @@ import React from 'react';
 
 import '@locale';
 
-import {Routes} from '@routes';
+import { Routes } from '@routes';
 
-import {useApp} from './hooks/useApp';
+import { useApp } from './hooks/useApp';
+import { MembersProvider } from './screens/Members/hooks/useMembers';
 
 const queryClient = new QueryClient();
 
@@ -17,7 +18,9 @@ export default function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Routes />
+      <MembersProvider>
+        <Routes />
+      </MembersProvider>
     </QueryClientProvider>
   );
 }
